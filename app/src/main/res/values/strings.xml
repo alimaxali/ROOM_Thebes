@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ROOM_Thebes</string>
+
+    <string-array name="choose1">
+        <item>الصف الاول</item>
+        <item>الصف الثاني</item>
+        <item>الصف الثالت</item>
+        <item>الصف الرابع</item>
+
+    </string-array>
+    <string-array name="choose2">
+        <item>نظم المعلومات</item>
+        <item>محاسبه</item>
+        <item>تسويق</item>
+
+    </string-array>
+</resources>

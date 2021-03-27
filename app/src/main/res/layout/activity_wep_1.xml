@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".wep_1">
+
+
+    <WebView
+        android:id="@+id/wwee"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </WebView>
+
+    <com.nambimobile.widgets.efab.ExpandableFabLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.nambimobile.widgets.efab.Overlay
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.nambimobile.widgets.efab.ExpandableFab
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            app:backgroundTint="#4C4A4A"
+            app:efab_color="#4C4A4A" />
+
+
+        <com.nambimobile.widgets.efab.FabOption
+            android:id="@+id/Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Home"
+            app:backgroundTint="#777272"
+            app:fab_color="#777272"
+            app:fab_icon="@drawable/ic_home"
+            app:label_text="Home" />
+
+        <com.nambimobile.widgets.efab.FabOption
+            android:id="@+id/shet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="shet"
+            app:backgroundTint="#777272"
+            app:fab_color="#777272"
+            app:fab_icon="@drawable/ic_shet"
+            app:label_text="حل الشيتات"
+            />
+
+        <com.nambimobile.widgets.efab.FabOption
+            android:id="@+id/mhadrat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="mhadrat"
+            app:backgroundTint="#777272"
+            app:fab_color="#777272"
+            app:fab_icon="@drawable/ic_mhadrat"
+            app:label_text="المحاضرات" />
+
+        <com.nambimobile.widgets.efab.FabOption
+            android:id="@+id/mrgat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="mrgat"
+            app:backgroundTint="#777272"
+            app:fab_color="#777272"
+            app:fab_icon="@drawable/ic_mrgat"
+            app:label_text="مراجعات نهائيه" />
+
+        <com.nambimobile.widgets.efab.FabOption
+            android:id="@+id/apot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="apot"
+            app:backgroundTint="#777272"
+            app:fab_color="#777272"
+            app:fab_icon="@drawable/ic_apot"
+            app:label_text="حول / التحديثات" />
+
+
+    </com.nambimobile.widgets.efab.ExpandableFabLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

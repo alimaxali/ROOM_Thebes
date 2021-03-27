@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="270dp"
+        android:src="@drawable/gif55"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/id_buttons"
+        android:layout_width="212dp"
+        android:layout_height="104dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_email_pass"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/test_stu"
+            android:layout_width="182dp"
+            android:layout_height="47dp"
+
+            android:background="@drawable/button"
+            android:text="تسجيل الدخول"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="631dp" />
+
+        <Button
+            android:id="@+id/new_stu"
+            android:layout_width="182dp"
+            android:layout_height="47dp"
+            android:background="@drawable/button2"
+            android:text="تاكيد الحساب اولا"
+            android:textColor="#FFFFFF"
+
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_email_pass"
+        android:layout_width="234dp"
+        android:layout_height="116dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_qsm"
+        app:layout_constraintVertical_bias="0.17">
+
+        <EditText
+            android:id="@+id/name_stu"
+            android:layout_width="224dp"
+            android:layout_height="35dp"
+            android:background="@drawable/see"
+            android:drawableStart="@drawable/ic_name111"
+            android:ems="10"
+            android:hint="اسم الطالب كامل"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+        <EditText
+            android:id="@+id/Email1"
+            android:layout_width="224dp"
+            android:layout_height="35dp"
+            android:background="@drawable/see"
+            android:drawableStart="@drawable/ic_email111"
+            android:ems="10"
+            android:hint=" كود الطالب *20201234*"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+        <EditText
+            android:id="@+id/pass1"
+            android:layout_width="224dp"
+            android:layout_height="35dp"
+            android:background="@drawable/see"
+            android:drawableStart="@drawable/ic_pass111"
+            android:ems="10"
+            android:hint="... الباسورد"
+            android:inputType="textWebPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textAlignment="textEnd" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_saf"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:text="اختار الصف"
+            android:textAlignment="center"
+            android:textColor="#87B0D1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="335dp" />
+
+        <Spinner
+            android:id="@+id/saf"
+            android:layout_width="207dp"
+            android:layout_height="match_parent"
+            android:background="#CABABA"
+            android:entries="@array/choose1"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="335dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_qsm"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="@+id/id_saf"
+        app:layout_constraintTop_toBottomOf="@+id/id_saf"
+        app:layout_constraintVertical_bias="0.044">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:text="اختار القسم"
+            android:textAlignment="center"
+            android:textColor="#87B0D1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="378dp" />
+
+        <Spinner
+            android:id="@+id/qsm"
+            android:layout_width="207dp"
+            android:layout_height="match_parent"
+            android:background="#E1D0D0"
+            android:entries="@array/choose2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="216dp"
+        android:layout_height="42dp"
+        android:text="Room_Thebes"
+        android:textAlignment="center"
+        android:textColor="#6B19FD"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_saf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gifImageView2"
+        app:layout_constraintVertical_bias="0.957" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
